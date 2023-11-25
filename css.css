@@ -1,0 +1,175 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+
+ *{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';font-size: 22px;
+  
+ }
+ .evrything{
+  scroll-snap-type: y mandatory ;
+  height: 100vh;
+  overflow-y: scroll;
+}
+ section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  
+}
+
+ 
+
+.navbar{
+  width: 280%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+position: fixed;
+  
+}
+.logo{ 
+  right: 100%;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  list-style: none;
+}
+.navbar ul li{
+  list-style: none;
+  display:inline-block ;
+  margin:  0 20px;
+  position: relative;
+}
+.navbar ul li a{
+  text-decoration:  none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.navbar ul li ::after{
+  content:'';
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  background: #009688;
+  left: 0;
+  bottom:-10px;
+  transition: 0.5s;
+
+}
+.navbar ul li :hover::after{
+  width: 100%;
+  
+
+}
+.content{
+  width: 190%;
+  transform: translateX(-20%);
+  text-align: center;
+  color:#ffffff ;
+  margin: auto;
+  
+}
+.content h1 {
+  font-size: 60px;
+  margin-top:80px;
+}
+.content p{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 30px;
+  color:#ffffff ;
+  font-size: 25px;
+  font: bold;
+}
+
+img{
+  float: right;
+  margin: 5%;
+ max-width: 380px;
+ border-radius: 15px;
+ 
+}
+
+.text_box h2{
+  font-size: 42px;
+  transform: translateY(290%);
+  margin: 5%;
+ 
+}
+.text_box p{
+  font-size: 19px;
+  width: 50%;
+  transform: translateY(130%);
+  margin: 5%;
+  
+ 
+}
+
+
+
+ .hidden {
+
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 4s;
+  
+  }
+  
+  .show {
+  
+  opacity: 1;
+  
+  filter: blur(0);
+  
+  transform: translateX(0%);
+  
+  }
+  .nothing{
+  
+  transform: translateY(100%);
+  
+
+  }
+  .gg{
+    font-size: 19px;
+  width: 40%;
+  transform: translateY(90%);
+  margin: 5%;
+  
+  }
+  .zoo{
+    float: right;
+    margin: 5%;
+   max-width: 330px;
+   border-radius: 15px;
+  }
+  .ff{
+    font-size: 16px;
+    width: 35%;
+    transform: translateY(90%);
+    margin: 5%;
+  }
+  body{
+    height:100vh;
+    margin: 0;
+    --x: calc(var(--posX, 0) * 1px);
+    --y: calc(var(--posY, 0) * 1px);
+    background-image: 
+      linear-gradient(115deg, rgb(211 255 215), rgb(0 0 0)), 
+      radial-gradient( 90% 100% at calc( 50% + var(--x)) calc( 0% + var(--y)), rgb(200 200 200), rgb(022 000 045)), 
+      radial-gradient(100% 100% at calc( 80% - var(--x)) calc( 0% - var(--y)), rgb(250 255 000), rgb(036 000 000)), 
+      radial-gradient(150% 210% at calc(100% + var(--x)) calc( 0% + var(--y)), rgb(020 175 125), rgb(000 010 255)), 
+      radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(255 077 000), rgb(000 200 255)), 
+      linear-gradient(60deg, rgb(255 000 000), rgb(120 086 255));
+    background-blend-mode: overlay, overlay, difference, difference, difference, normal;
+  }
